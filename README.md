@@ -2,7 +2,7 @@
 
 A Python script that automatically finds upcoming in-person hackathons across Europe, filters them by distance from your home, and adds them directly to Google Calendar — complete with deadline reminders.
 
-> Built because manually searching Devpost, Eventbrite, and newsletters every week was a waste of time. It found [Berlin Hack]([https://berlinhack.com](https://luma.com/bigberlinhack?tk=ynNd3O)) for me.
+> Built because manually searching Devpost, Eventbrite, and newsletters every week was a waste of time. It found [Berlin Hack]([https://luma.com/bigberlinhack?tk=ynNd3O]) for me.
 
 ---
 
