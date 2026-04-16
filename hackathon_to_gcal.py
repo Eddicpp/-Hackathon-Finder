@@ -812,13 +812,16 @@ def apply_filters(events, force=False):
 
     filtered = []
     for ev in events:
-        nome = (ev.get("nome") or "").lower()
+        nome_raw = ev.get("nome") or ""
+        nome = (nome_raw if isinstance(nome_raw, str) else str(nome_raw)).lower()
         dist = ev.get("distanza_km")
         cost = ev.get("costo_trasporto_stimato")
-        luogo = (ev.get("luogo") or "").lower()
+        luogo_raw = ev.get("luogo") or ""
+        luogo = (luogo_raw if isinstance(luogo_raw, str) else str(luogo_raw)).lower()
         online = ev.get("online") or False
         tipo = (ev.get("tipo") or "").lower()        # fix: None → ""
-        org = (ev.get("organizzatore") or "").lower()
+        org_raw = ev.get("organizzatore") or ""
+        org = (org_raw if isinstance(org_raw, str) else ", ".join(org_raw)).lower()
 
         if online: continue
 
